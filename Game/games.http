@@ -1,0 +1,26 @@
+GET http://localhost:5054/games
+
+GET http://localhost:5054/games/1
+
+POST http://localhost:5054/games
+
+Content-Type: application/json
+
+{
+    "name" : "Mslm",
+    "genre" : "Kids and Family",
+    "price" : 19.99,
+    "releaseDate" : "2024-11-18"
+}
+
+PUT http://localhost:5054/games/1
+Content-Type: application/json
+
+{
+    "name" : "Mslm 2",
+    "genre" : "Kids and Family",
+    "price" : 19.99,
+    "releaseDate" : "2024-11-18"
+}
+
+DELETE http://localhost:5054/games/1
